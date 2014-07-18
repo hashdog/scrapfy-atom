@@ -1,0 +1,14 @@
+{
+  "name": "scrapfy",
+  "main": "./lib/scrapfy",
+  "version": "0.1.0",
+  "description": "A collaborative code editor for ninjas",
+  "activationEvents": ["scrapfy:create"],
+  "repository": "https://github.com/atom/scrapfy",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
