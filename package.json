@@ -1,14 +1,15 @@
 {
   "name": "scrapfy",
   "main": "./lib/scrapfy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A collaborative code editor for ninjas",
-  "activationEvents": ["scrapfy:create"],
+  "activationEvents": [
+    "scrapfy:create"
+  ],
   "repository": "https://github.com/hashdog/scrapfy-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
