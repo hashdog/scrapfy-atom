@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A collaborative code editor for ninjas",
   "activationEvents": ["scrapfy:create"],
-  "repository": "https://github.com/atom/scrapfy",
+  "repository": "https://github.com/hashdog/scrapfy-atom",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
