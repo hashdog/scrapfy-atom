@@ -13,6 +13,7 @@ langsMap =
   'text.html.basic': 'html'
   'text.html.ruby': 'html_ruby'
   'text.html.erb': 'html_ruby'
+  'source.java': 'java'
   'source.js': 'javascript'
   'source.json': 'json'
   'source.perl': 'perl'
