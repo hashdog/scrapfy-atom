@@ -1,7 +1,7 @@
 {
   "name": "scrapfy",
   "main": "./lib/scrapfy",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A collaborative code editor for ninjas. (http://scrapfy.io)",
   "activationEvents": [
     "scrapfy:create"
