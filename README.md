@@ -1,5 +1,18 @@
-# scrapfy package
+Atom SCRAPfy Plugin
+======================
 
-A short description of your package.
+This is a simple plugin for [Atom](http://atom.io) to allow you for easily pasting code to SCRAPfy
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+It takes the current selection in a file or the entire text, uploads it to (by default) [SCRAPfy](http://scrapfy.io), and returns the URL to the clipboard.
+
+Installation
+------------
+
+In Atom, go to Preferences > Packages. Search **SCRAPfy** and install it.
+
+Usage
+-----
+
+Select some text (or don't) and hit `ctrl + alt + s` and afterwards `ctrl + v` - and you're good to go!
+
+*HashDog Team - http://www.hashdog.com - http://www.hashdog.io*
