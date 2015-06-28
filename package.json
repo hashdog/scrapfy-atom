@@ -11,7 +11,7 @@
   "repository": "https://github.com/hashdog/scrapfy-atom",
   "license": "MIT",
   "engines": {
-    "atom": ">1.0.0"
+    "atom": ">0.9.0"
   },
   "dependencies": {}
 }
