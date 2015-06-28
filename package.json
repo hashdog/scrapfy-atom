@@ -1,7 +1,7 @@
 {
   "name": "scrapfy",
   "main": "./lib/scrapfy",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A collaborative code editor for ninjas. (http://scrapfy.io)",
   "activationCommands": {
     "atom-workspace": [
