@@ -1,7 +1,7 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'New SCRAP': 'scrapfy:create'
+  'atom-workspace':
+      'New SCRAPfy': 'scrapfy:create'
 
 'menu': [
   {
