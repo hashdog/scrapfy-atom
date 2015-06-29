@@ -1,5 +1,4 @@
 http = require 'http'
-Clipboard = require 'clipboard'
 ScrapfyView = require './scrapfy-view'
 
 langsMap =
@@ -26,11 +25,14 @@ langsMap =
   'text.xml': 'xml'
   'source.yaml': 'yaml'
 
-module.exports =
+module.exports = Scrapfy =
+  scrapfyView: null
+
   activate: (state) ->
     atom.workspaceView.command 'scrapfy:create', => @create()
+    @scrapfyView = new ScrapfyView(state.scrapfyViewState)
 
-  post: (data)->
+  post: (data) ->
     options =
       hostname: 'api.scrapfy.io'
       path: '/scraps'
@@ -47,9 +49,9 @@ module.exports =
         body += chunk
 
       res.on 'end', ->
-
         response = JSON.parse(body)
-        Clipboard.writeText response.url
+
+        atom.clipboard.write(response.url)
         scrapfyView = new ScrapfyView(response.url)
 
         setTimeout (->
@@ -59,6 +61,12 @@ module.exports =
 
     request.write(JSON.stringify(data))
     request.end()
+
+  deactivate: ->
+    @scrapfyView.destroy()
+
+  serialize: ->
+    scrapfyViewState: @scrapfyView.serialize()
 
   create: ->
     editor = atom.workspace.getActiveEditor()

@@ -1,15 +1,21 @@
-# See https://atom.io/docs/latest/creating-a-package#menus for more details
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
 'context-menu':
-  'atom-workspace':
-      'New SCRAPfy': 'scrapfy:create'
-
+  'atom-text-editor': [
+    {
+      'label': 'New SCRAPfy'
+      'command': 'scrapfy:create'
+    }
+  ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
       'label': 'SCRAPfy'
       'submenu': [
-        { 'label': 'Create', 'command': 'scrapfy:create' }
+        {
+          'label': 'Create'
+          'command': 'scrapfy:create'
+        }
       ]
     ]
   }

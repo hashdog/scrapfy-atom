@@ -1,17 +1,27 @@
-{View} = require 'atom'
-
 module.exports =
-class ScrapfyView extends View
-  @content: ->
-    @div class: 'scrapfy inline-block'
+class ScrapfyView
+  constructor: (serializedState) ->
 
-  initialize: (url) ->
-    @attach(url)
+    # Create root element
+    @element = document.createElement('div')
+    @element.classList.add('scrapfy')
+    @element.classList.add('inline-block')
 
+    # Create message element
+    message = document.createElement('div')
+    message.textContent = "The MyPackage package is Alive! It's ALIVE!"
+    message.classList.add('message')
+    @element.appendChild(message)
+
+  # Returns an object that can be retrieved when package is activated
   serialize: ->
 
+  # Tear down any state and detach
   destroy: ->
-    @detach()
+    @element.remove()
+
+  getElement: ->
+    @element
 
   attach: (url) ->
     statusbar = atom.workspaceView.statusBar
