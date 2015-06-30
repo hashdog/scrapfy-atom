@@ -29,7 +29,7 @@ module.exports = Scrapfy =
   scrapfyView: null
 
   activate: (state) ->
-    atom.workspaceView.command 'scrapfy:create', => @create()
+    atom.commands.add 'atom-workspace', 'scrapfy:create': => @create()
     @scrapfyView = new ScrapfyView(state.scrapfyViewState)
 
   post: (data) ->
