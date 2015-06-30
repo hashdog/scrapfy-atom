@@ -58,7 +58,6 @@ module.exports = Scrapfy =
           scrapfyView.destroy()
         ), 5000
 
-
     request.write(JSON.stringify(data))
     request.end()
 

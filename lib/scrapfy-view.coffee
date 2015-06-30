@@ -7,12 +7,6 @@ class ScrapfyView
     @element.classList.add('scrapfy')
     @element.classList.add('inline-block')
 
-    # Create message element
-    message = document.createElement('div')
-    message.textContent = "The MyPackage package is Alive! It's ALIVE!"
-    message.classList.add('message')
-    @element.appendChild(message)
-
   # Returns an object that can be retrieved when package is activated
   serialize: ->
 
