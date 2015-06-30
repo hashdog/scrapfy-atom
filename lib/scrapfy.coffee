@@ -68,6 +68,8 @@ module.exports = Scrapfy =
     scrapfyViewState: @scrapfyView.serialize()
 
   create: ->
+    that = this
+
     atom.workspace.observeTextEditors (editor) ->
       grammar = editor.getGrammar().scopeName
       selection = editor.getSelectedText()
@@ -76,7 +78,7 @@ module.exports = Scrapfy =
       content = (if selection then selection else allText)
       lang = langsMap[grammar]
 
-      @post(
+      that.post(
         content: content
         lang: lang
       )
