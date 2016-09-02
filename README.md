@@ -16,3 +16,8 @@ Usage
 Select some text (or don't) and hit `ctrl + alt + s` and afterwards `ctrl + v` - and you're good to go!
 
 *HashDog Team - http://www.hashdog.com - http://www.hashdog.io*
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/hashdog/scrapfy-atom/badge.svg?style=beer-square)](https://beerpay.io/hashdog/scrapfy-atom)  [![Beerpay](https://beerpay.io/hashdog/scrapfy-atom/make-wish.svg?style=flat-square)](https://beerpay.io/hashdog/scrapfy-atom?focus=wish)
