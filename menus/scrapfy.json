@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "New SCRAPfy",
+        "command": "scrapfy:create"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "SCRAPfy",
+          "submenu": [
+            {
+              "label": "Create",
+              "command": "scrapfy:create"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

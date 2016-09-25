@@ -1,17 +1,18 @@
 {
   "name": "scrapfy",
   "main": "./lib/scrapfy",
-  "version": "0.4.5",
-  "description": "A collaborative code editor for ninjas. (http://scrapfy.io)",
+  "version": "0.5.0",
+  "description": "A collaborative code editor for ninjas. (https://scrapfy.io)",
   "activationCommands": {
-    "atom-workspace": [
-      "scrapfy:create"
-    ]
+    "atom-workspace": "scrapfy:create"
   },
   "repository": "https://github.com/hashdog/scrapfy-atom",
+  "bugs": {
+   "url": "https://github.com/hashdog/scrapfy-atom/issues"
+ },
   "license": "MIT",
   "engines": {
-    "atom": ">0.9.0"
+    "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {}
 }
